@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+body,ul,h1,h2,h3,h4{
+	margin: 0;
+	padding: 0;
+}
+a:hover{
+	opacity: 0.8;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+h2{
+	font-size: 18px;
+}
+header{
+	width: 100%;
+	height: 180px;
+	background-image: url(../img/header.jpg);
+	background-size:cover;
+	background-position: center,center;
+}
+header.top-header{
+	height: 500px;
+	position: relative;
+}
+header.top-header img{
+	width: 60px;
+	position: absolute;
+	top:150px;
+}
+header.top-header h1.top-logo{
+	text-align: center;
+	margin: 0;
+}
+header.top-header nav{
+	position: absolute;
+	top: 400px;
+	width: 100%;
+}
+header.contents nav{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+header.contents h1{
+	text-align: center;
+}
+header.contents img{
+	padding-top: 30px;
+	width: 130px;
+}
+header nav ul{
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+header nav ul li{
+	text-decoration: none;
+	display: block;
+	width: 20%;
+	color: white;
+	text-shadow: black 1px 1px 3px;
+	text-align: center;
+	white-space: nowrap;
+}
+header nav ul p{
+	margin: 10px 0;
+}
+header nav a:hover{
+	color: white;
+}
+header nav ul li span{
+	font-size: 10px;
+	padding: 10px 0;
+	border-top:1px solid white;
+}
+.wrapper{
+	padding: 0 5%;
+}
+main{
+	background-image: url(../img/flower.png);
+	background-position: right top;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+.consept{
+	margin: 10px 0;
+}
+.consept img{
+	width: 50%;
+	max-width: 300px;
+}
+.consept div{
+	padding: 5%;
+	background-color: rgba(136,142,126,0.3);
+
+}
+section{
+	display: flex;
+	justify-content: space-between;
+}
+aside{
+	width: 30%;
+	overflow:hidden;
+}
+
+aside img{
+	width: 100%;
+	min-width: 300px;
+}
+section{
+	margin: 20px 0;
+}
+section article{
+	width: 65%;
+}
+
+.banner{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+.banner p{
+	margin: 0;
+}
+.banner img{
+	width: 100%;
+	max-width: 500px;
+}
+footer{
+	text-align: center;
+	background-color: rgba(136,142,126,0.3);
+	padding: 10px;
+}
+.submit-btn{
+	margin-top: 20px;
+	text-align:center;
+}
+#profile-img{
+margin:0 auto;
+}
+#profile-img img{
+	width: 100%;
+}
+/*トップへ戻るボタン*/
+.page-top{display:none;}
+.page-top a{
+	border:none;
+	width: 50px;
+	height:50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	margin-right:10px;
+	background-image:url("../img/to-top.png");
+	opacity:0.3;
+	}
+.page-top a:hover{opacity:0.5;}
