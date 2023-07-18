@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+html {
+  box-sizing: border-box;
+  animation-name: fade;
+  animation-duration: 1s;
+  font-family: 'Noto Serif JP', serif;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 body,ul,h1,h2,h3,h4{
 	margin: 0;
 	padding: 0;
@@ -35,6 +52,8 @@ header.top-header img{
 header.top-header h1.top-logo{
 	text-align: center;
 	margin: 0;
+	animation-name: fade;
+  animation-duration: 3s;
 }
 header.top-header nav{
 	position: absolute;
@@ -96,6 +115,8 @@ main{
 .consept img{
 	width: 50%;
 	max-width: 300px;
+	animation-name: fade;
+  animation-duration: 5s;
 }
 .consept div{
 	padding: 5%;
