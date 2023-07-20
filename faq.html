@@ -1,124 +1,158 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">    <title>森と風</title>
-        <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
+    <meta name="robots" content="noindex, nofollow">
+    <title>森と風</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 
-    .main-block-faq h3{
-        font-weight:lighter;
-        color:black;
-        font-size:23px;
-        border-bottom:solid 2px black;
-        padding:5px;
-        margin:15px 0 5px;
+        .main-block-faq h3 {
+            font-weight: lighter;
+            color: black;
+            font-size: 23px;
+            border-bottom: solid 2px black;
+            padding: 5px;
+            margin: 15px 0 5px;
         }
-    #faq-q{
-        font-size:15px;
-        font-weight:bold;
+
+        #faq-q {
+            font-size: 15px;
+            font-weight: bold;
         }
-    #faq-a{
-        font-size:14px;
-        line-height:2;
-        margin:1em 2em 2em 2em;
+
+        #faq-a {
+            font-size: 14px;
+            line-height: 2;
+            margin: 1em 2em 2em 2em;
         }
-    #faq-a a{
-        display:inline;
-        margin:0;
+
+        #faq-a a {
+            display: inline;
+            margin: 0;
         }
-    
-    /*アコーディオンメニュー*/
-    .cp_actab {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-    }
-    .cp_actab input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    }
-    .cp_actab label {
-    font-size:14px;
-    line-height: 3;
-    position: relative;
-    display: block;
-    padding: 0 0 0 1em;
-    cursor: pointer;
-    margin: 0 0 1px 0;
-    border-bottom: 1px dotted black;
-    }
-    .cp_actab .cp_actab-content {
-    overflow: hidden;
-    max-height: 0;
-    -webkit-transition: max-height 0.5s;
-    transition: max-height 0.5s;
-    color: black;
-    background: white;
-    }
-    .cp_actab .cp_actab-content p {
-    margin:1em;
-    }
-    .cp_actab .cp_actab-content a:link {display:block;color: black;border-bottom:1px solid black;margin:0 1em;}
-    .cp_actab .cp_actab-content a:hover {background:#FF9;}
-    .cp_actab .cp_actab-content a:visited {color: black;}
-    /* :checked */
-    .cp_actab input:checked ~ .cp_actab-content {
-    max-height: 40em;
-    }
-    /* Icon */
-    .cp_actab label::after {
-    line-height: 3;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 3em;
-    height: 3em;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    text-align: center;
-    }
-    .cp_actab input[type=checkbox] + label::after {
-    content: url("img/faq_yajirusi.png") ;
-    }
-    .cp_actab input[type=checkbox]:checked + label::after {
-    transform: rotate(180deg);
-    }
-    </style> 
+
+        /*アコーディオンメニュー*/
+        .cp_actab {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .cp_actab input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .cp_actab label {
+            font-size: 14px;
+            line-height: 3;
+            position: relative;
+            display: block;
+            padding: 0 0 0 1em;
+            cursor: pointer;
+            margin: 0 0 1px 0;
+            border-bottom: 1px dotted black;
+        }
+
+        .cp_actab .cp_actab-content {
+            overflow: hidden;
+            max-height: 0;
+            -webkit-transition: max-height 0.5s;
+            transition: max-height 0.5s;
+            color: black;
+            background: white;
+        }
+
+        .cp_actab .cp_actab-content p {
+            margin: 1em;
+        }
+
+        .cp_actab .cp_actab-content a:link {
+            display: block;
+            color: black;
+            border-bottom: 1px solid black;
+            margin: 0 1em;
+        }
+
+        .cp_actab .cp_actab-content a:hover {
+            background: #FF9;
+        }
+
+        .cp_actab .cp_actab-content a:visited {
+            color: black;
+        }
+
+        /* :checked */
+        .cp_actab input:checked~.cp_actab-content {
+            max-height: 40em;
+        }
+
+        /* Icon */
+        .cp_actab label::after {
+            line-height: 3;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 3em;
+            height: 3em;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            text-align: center;
+        }
+
+        .cp_actab input[type=checkbox]+label::after {
+            content: url("img/faq_yajirusi.png");
+        }
+
+        .cp_actab input[type=checkbox]:checked+label::after {
+            transform: rotate(180deg);
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="contents">
-           <h1 class="contents-logo"><a href="index.html"><img src="img/contents-logo.png" alt="森と風"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="about.html"><p>About</p><span>紫微斗数とは</span></a></li>
-                    <li><a href="profile.html"><p>Profile</p><span>森と風について</span></a></li>
-                    <li><a href="faq.html"><p>Q&A</p><span>よくある質問</span></a></li>
-                    <li><a href="contact.html"><p>Contact</p><span>お問い合わせ</span></a></li>
-                </ul>
-            </nav>
+        <h1 class="contents-logo"><a href="index.html"><img src="img/contents-logo.png" alt="森と風"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">
+                        <p>About</p><span>紫微斗数とは</span>
+                    </a></li>
+                <li><a href="profile.html">
+                        <p>Profile</p><span>森と風について</span>
+                    </a></li>
+                <li><a href="faq.html">
+                        <p>Q&A</p><span>よくある質問</span>
+                    </a></li>
+                <li><a href="contact.php">
+                        <p>Contact</p><span>お問い合わせ</span>
+                    </a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article class="consept">
@@ -127,84 +161,104 @@
                 <h2>よくあるご質問</h2>
             </div>
         </article>
-        <section class="wrapper">               
-                        <div class="main-block-faq">
-                            <p>★知りたい項目をクリックしてください。</p>
-                               <h3>鑑定依頼に関して</h3>
-                                <div class="cp_actab">
-                                    <input id="tab-1" type="checkbox" name="tabs">
-                                    <label for="tab-1"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-2" type="checkbox" name="tabs">
-                                    <label for="tab-2"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-3" type="checkbox" name="tabs">
-                                    <label for="tab-3"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-4" type="checkbox" name="tabs">
-                                    <label for="tab-4"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-5" type="checkbox" name="tabs">
-                                    <label for="tab-5"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <h3>お支払いに関して</h3>
-                                <div class="cp_actab">
-                                    <input id="tab-6" type="checkbox" name="tabs">
-                                    <label for="tab-6"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-7" type="checkbox" name="tabs">
-                                    <label for="tab-7"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-8" type="checkbox" name="tabs">
-                                    <label for="tab-8"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-9" type="checkbox" name="tabs">
-                                    <label for="tab-9"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                                <div class="cp_actab">
-                                    <input id="tab-10" type="checkbox" name="tabs">
-                                    <label for="tab-10"><p id="faq-q">●●●●は●●●●ですか？</p></label>
-                                    <div class="cp_actab-content">
-                                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
-                                    </div>
-                                </div>
-                          </div>
+        <section class="wrapper">
+            <div class="main-block-faq">
+                <p>★知りたい項目をクリックしてください。</p>
+                <h3>鑑定依頼に関して</h3>
+                <div class="cp_actab">
+                    <input id="tab-1" type="checkbox" name="tabs">
+                    <label for="tab-1">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-2" type="checkbox" name="tabs">
+                    <label for="tab-2">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-3" type="checkbox" name="tabs">
+                    <label for="tab-3">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-4" type="checkbox" name="tabs">
+                    <label for="tab-4">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-5" type="checkbox" name="tabs">
+                    <label for="tab-5">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <h3>お支払いに関して</h3>
+                <div class="cp_actab">
+                    <input id="tab-6" type="checkbox" name="tabs">
+                    <label for="tab-6">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-7" type="checkbox" name="tabs">
+                    <label for="tab-7">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-8" type="checkbox" name="tabs">
+                    <label for="tab-8">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-9" type="checkbox" name="tabs">
+                    <label for="tab-9">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+                <div class="cp_actab">
+                    <input id="tab-10" type="checkbox" name="tabs">
+                    <label for="tab-10">
+                        <p id="faq-q">●●●●は●●●●ですか？</p>
+                    </label>
+                    <div class="cp_actab-content">
+                        <p id="faq-a">回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。回答の文章がこちらに入ります。</p>
+                    </div>
+                </div>
+            </div>
         </section>
-  
+
         <section class="banner wrapper">
             <div>
                 <a href="https://coconala.com/users/224556"><img src="img/coconara-bn.jpg" alt="コンタクト"></a>
@@ -221,10 +275,11 @@
         <small>Copy Right &copy; 2023 森と風</small>
     </footer>
     <div>
-		<!--pagetopボタン -->
-		<div id="page-top" class="page-top"><a id="move-page-top" class="move-page-top"></a></div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/to-top.js" type="text/javascript"></script>
+        <!--pagetopボタン -->
+        <div id="page-top" class="page-top"><a id="move-page-top" class="move-page-top"></a></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/to-top.js" type="text/javascript"></script>
     </div>
 </body>
+
 </html>

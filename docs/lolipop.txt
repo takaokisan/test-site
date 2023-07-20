@@ -1,0 +1,12 @@
+ロリポップ
+takaoki.pupu.jp
+pass Bchan-1003
+yt.okiwan@gmail.com
+
+MySQL ADMIN
+サーバー（ホスト名） mysql215.phy.lolipop.lan
+データベース名 	LAA1542338-testdb
+データベースバージョン 	5.7.36
+ユーザー名 	LAA1542338
+pass chani1003
+

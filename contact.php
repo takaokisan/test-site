@@ -1,114 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">    <title>森と風</title>
-    <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>森と風</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 
-    
-    <!-- Custom styles for this template -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="contents">
-           <h1 class="contents-logo"><a href="index.html"><img src="img/contents-logo.png" alt="森と風"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="about.html"><p>About</p><span>紫微斗数とは</span></a></li>
-                    <li><a href="profile.html"><p>Profile</p><span>森と風について</span></a></li>
-                    <li><a href="faq.html"><p>Q&A</p><span>よくある質問</span></a></li>
-                    <li><a href="contact.html"><p>Contact</p><span>お問い合わせ</span></a></li>
-                </ul>
-            </nav>
-    </header>
-    <main>
-        <article class="consept">
-            <img src="img/contact.png" alt="consept">
-            <div class="wrapper">
-                <h2>お問い合わせ・ご依頼について</h2>
+  <header class="contents">
+    <h1 class="contents-logo"><a href="index.html"><img src="img/contents-logo.png" alt="森と風"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">
+            <p>About</p><span>紫微斗数とは</span>
+          </a></li>
+        <li><a href="profile.html">
+            <p>Profile</p><span>森と風について</span>
+          </a></li>
+        <li><a href="faq.html">
+            <p>Q&A</p><span>よくある質問</span>
+          </a></li>
+        <li><a href="contact.php">
+            <p>Contact</p><span>お問い合わせ</span>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="consept">
+      <img src="img/contact.png" alt="consept">
+      <div class="wrapper">
+        <h2>お問い合わせ・ご依頼について</h2>
 
-            </div>
-        </article>
-        <section class="wrapper">
- <!--フォームここから-->
-     
-        <form class="needs-validation" novalidate>
-	<div class="row g-3">
+      </div>
+    </article>
+    <section class="wrapper">
+      <!--フォームここから-->
 
-           <div class="col-12">
-             <h5>お問い合わせの種類を選んでください</h5>
-              <select class="form-select" id="state" required>
-                <option value="">選択してください</option>
-                <option>鑑定方法について</option>
-                <option>鑑定のご依頼について</option>
-                <option>鑑定後のご相談</option>
-                <option>お支払いについて</option>
-                <option>その他お問い合わせ</option>
-               </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
+      <form action="send-local.php" method="post" class="needs-validation" novalidate>
+        <div class="row g-3">
+
+          <div class="col-12">
+            <h5>お問い合わせの種類を選んでください</h5>
+            <select class="form-select" name="subject" required>
+              <option value="未選択">選択してください</option>
+              <option value="鑑定方法について">鑑定方法について</option>
+              <option value="依頼について">鑑定のご依頼について</option>
+              <option value="相談">鑑定後のご相談</option>
+              <option value="支払い">お支払いについて</option>
+              <option value="その他">その他お問い合わせ</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
             </div>
           </div>
-            <div class="col-12">
-	            <div class="col">
-			<h5><label for="aisatsubun" class="form-label"><span class="badge bg-danger me-2">必須</span>お問い合わせ内容</label></h5>
- 			 <textarea class="form-control" placeholder="こちらにお問い合わせ内容を記載してください" id="textarea" style="height: 250px"></textarea>
- 			 <label for="textarea"></label>
-	            </div>
-            </div>
-            <div class="col-12">
-             <h5>お名前</h5>
-              <input type="text" class="form-control" id="shopname" placeholder="">
-            </div>
+        </div>
+        <div class="col-12">
+          <div class="col">
+            <h5><label for="aisatsubun" class="form-label"><span class="badge bg-danger me-2">必須</span>お問い合わせ内容</label>
+            </h5>
+            <textarea class="form-control" placeholder="こちらにお問い合わせ内容を記載してください" name="text" style="height: 250px"></textarea>
+            <label for="textarea"></label>
+          </div>
+        </div>
+        <div class="col-12">
+          <h5>お名前</h5>
+          <input type="text" class="form-control" name="name" placeholder="テスト花子">
+        </div>
 
-           <div class="col-12">
-              <h5><label for="email" class="form-label"><span class="badge bg-danger me-2">必須</span>連絡先メールアドレス</label></h5>
-              <input type="email" class="form-control" id="email" placeholder="例）toiawase@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-              </div>
-  <p>
-  <div class="btn btn-secondary" data-bs-toggle="collapse" href="#jushin" role="button" aria-expanded="false" aria-controls="jushin">
-   <i class="bi bi-exclamation-triangle-fill lead"></i> 【ご注意】メール受信設定について
-  </div>
-</p>
-<div>
-事前に当サイトからのメールを受信する設定をお願いします。<b class="text-danger">各携帯会社のドメイン指定受信設定方法にて下記のアドレスを受信可能にしてください。</b>セキュリティ設定を強化されている方は、当方からのメールを受信できない場合がございます。
-<div class="p-3 my-2 border rounded-pill text-center"><i class="bi bi-envelope me-2"></i>こちらのアドレスの受信設定をお願いします：</i>service@exampleco.jp</div>
-</div>
+        <div class="col-12">
+          <h5><label for="email" class="form-label"><span class="badge bg-danger me-2">必須</span>連絡先メールアドレス</label></h5>
+          <input type="email" class="form-control" name="mail" placeholder="例）toiawase@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+        <p>
+        <div class="btn btn-secondary" data-bs-toggle="collapse" href="#jushin" role="button" aria-expanded="false" aria-controls="jushin">
+          <i class="bi bi-exclamation-triangle-fill lead"></i> 【ご注意】メール受信設定について
+        </div>
+        </p>
+        <div>
+          事前に当サイトからのメールを受信する設定をお願いします。<b class="text-danger">各携帯会社のドメイン指定受信設定方法にて下記のアドレスを受信可能にしてください。</b>セキュリティ設定を強化されている方は、当方からのメールを受信できない場合がございます。
+          <div class="p-3 my-2 border rounded-pill text-center"><i class="bi bi-envelope me-2"></i>こちらのアドレスの受信設定をお願いします
+          </div>
+        </div>
 
-<div class="submit-btn">
-    <button type="button" class="btn btn-warning px-5 py-3 btn-lg ">お問い合わせを送信する</button>
-</div>
-          <hr class="my-4">
+        <div class="submit-btn">
+          <button type="submit" class="btn btn-warning px-5 py-3 btn-lg ">お問い合わせを送信する</button>
+        </div>
+        <hr class="my-4">
 
-<!--
+        <!--
           <div class="col-12">
                   <h4 class="p-2 graybd mb-3">★ご依頼の方は、以下もご確認ください</h4>
           </div>
@@ -271,30 +265,31 @@
         </div>
           <hr class="my-4">
     -->
- <!--フォームここまで-->
+        <!--フォームここまで-->
 
-        </section>
-  
-        <section class="banner wrapper">
-            <div>
-                <a href="https://coconala.com/users/224556"><img src="img/coconara-bn.jpg" alt="コンタクト"></a>
-                <p>ご依頼は【ココナラ】へ</p>
-            </div>
-            <div>
-                <a href=""><img src="img/blog-bn.jpg" alt="ブログを見る"></a>
-                <p>森と風の【●●ブログ】へ</p>
-            </div>
-        </section>
+      </form>
+    </section>
+    <section class="banner wrapper">
+      <div>
+        <a href="https://coconala.com/users/224556"><img src="img/coconara-bn.jpg" alt="コンタクト"></a>
+        <p>ご依頼は【ココナラ】へ</p>
+      </div>
+      <div>
+        <a href=""><img src="img/blog-bn.jpg" alt="ブログを見る"></a>
+        <p>森と風の【●●ブログ】へ</p>
+      </div>
+    </section>
 
-    </main>
-    <footer>
-        <small>Copy Right &copy; 2023 森と風</small>
-    </footer>
-    <div>
-		<!--pagetopボタン -->
-		<div id="page-top" class="page-top"><a id="move-page-top" class="move-page-top"></a></div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/to-top.js" type="text/javascript"></script>
-    </div>
+  </main>
+  <footer>
+    <small>Copy Right &copy; 2023 森と風</small>
+  </footer>
+  <div>
+    <!--pagetopボタン -->
+    <div id="page-top" class="page-top"><a id="move-page-top" class="move-page-top"></a></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/to-top.js" type="text/javascript"></script>
+  </div>
 </body>
+
 </html>
