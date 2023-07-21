@@ -48,7 +48,7 @@
     <section class="wrapper">
       <!--フォームここから-->
 
-      <form action="send-local.php" method="post" class="needs-validation" novalidate>
+      <form action="send-confirm.php" method="post" class="needs-validation" novalidate>
         <div class="row g-3">
 
           <div class="col-12">
